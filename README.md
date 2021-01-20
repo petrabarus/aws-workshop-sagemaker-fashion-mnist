@@ -1,0 +1,1 @@
+# aws-workshop-sagemaker-fashion-mnist
