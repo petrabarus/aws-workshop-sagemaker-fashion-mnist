@@ -24,15 +24,51 @@ Sekarang Anda akan membuat S3 Bucket yang akan digunakan untuk menyimpan data _t
 
 ![Langkah 1.b.1.](images/step-3.png)
 
-**LANGKAH 2** Sekarang Anda berada di S3 Console, klik **Create Bucket**.
+**LANGKAH 2** Sekarang Anda berada di S3 Console, klik tombol **Create Bucket**.
 
 ![Langkah 1.b.2.](images/step-4.png)
 
+**LANGKAH 3** Di bagian form, input nama __bucket__ Anda. Nama ini unik untuk semua pengguna AWS, jadinya pilih nama yang seunik mungkin. Sebagai contoh masukkan `impulse-workshop-<nama-anda>-<angkarandom>`. Pilih `us-east-1` untuk Region. Klik tombol **Create Bucket** di bagian bawah setelah selesai.
+
+![Langkah 1.b.3.](images/step-5.png)
+
+![Langkah 1.b.3.](images/step-6.png)
+
+**LANGKAH 4** Sekarang Anda bisa melihat __bucket__ Anda sudah dibuat.
+
+![Langkah 1.b.4.](images/step-7.png)
+
 ### 1. c. Membuat SageMaker Notebook
 
-**LANGKAH 1** Lorem Ipsum Dolor Sit Amet
+Sekarang kita akan membuat SageMaker Notebook untuk mengimplementasikan algoritma image recognition.
 
-**LANGKAH 2** Lorem Ipsum Dolor Sit Amet
+**LANGKAH 1** Dari AWS Console, buka SageMaker console dengan mencari SageMaker di bagian input pencarian atau akses [link ini](https://console.aws.amazon.com/sagemaker/home).
+
+![Langkah 1.c.1.](images/step-9.png) 
+
+**LANGKAH 2** Sekarang Anda sudah ada di SageMaker Console. Klik **Notebook Instances**.
+
+![Langkah 1.c.2.](images/step-10.png) 
+
+**LANGKAH 3** Di bagian ini, klik tombol **Create notebook instance**.
+
+![Langkah 1.c.3.](images/step-11.png)
+
+**LANGKAH 4** Pada **Notebook instance name** masukkan nama yang Anda pilih. Kemudian di bagian **Notebook instance type** pilih `ml.t2.medium`.
+
+![Langkah 1.c.4.](images/step-12.png)
+
+**LANGKAH 5** Pada bagian **IAM Role** pilih create **create new IAM Role**. Lalu di bagian **Specific S3 Buckets**, masukkan nama __bucket__ yang sudah Anda buat di Langkah sebelum ini. Klik **Create Role** untuk melanjutkan.
+
+![Langkah 1.c.5.](images/step-13.png)
+
+**LANGKAH 6** Biarkan pilihan yang lain, kemudian klik tombol **Create notebook instance**
+
+![Langkah 1.c.6.](images/step-14.png)
+
+**LANGKAH 7** Anda akan kembalik ke halaman daftar notebook. Notebook yang dibuat sudah dapat terlihat. Tunggu hingga statusnya **InService**.
+
+![Langkah 1.c.7.](images/step-15.png)
 
 ## 2. Membuat Image Classification Menggunakan Amazon Sagemaker Built-in Resnet Algorithm.
 
