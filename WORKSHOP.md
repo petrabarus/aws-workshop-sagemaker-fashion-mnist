@@ -72,16 +72,40 @@ Sekarang kita akan membuat SageMaker Notebook untuk mengimplementasikan algoritm
 
 ## 2. Membuat Image Classification Menggunakan Amazon Sagemaker Built-in Resnet Algorithm.
 
-**LANGKAH 1** Lorem Ipsum Dolor Sit Amet
+Di bagian ini kita akan melakukan implementasi algoritma image classification dengan menggunakan Amazon SageMaker dengan data [Caltech-256](https://authors.library.caltech.edu/7694/) yakni data berisi 256 benda dari total 30 ribu gambar.
 
-**LANGKAH 2** Lorem Ipsum Dolor Sit Amet
+**LANGKAH 1** Unduh notebook [`image-classification-fulltraining.ipynb`](res/image-classification-fulltraining.ipynb).
+
+**LANGKAH 2** Dari konsol Notebook instances, buka Jupyter Notebook dari instans yang sudah kita buat di atas. Pilih **Open Jupyter**.
+
+![Langkah 2.1.](images/step-15.png)
+
+**LANGKAH 2** Sekarang Anda sudah berada di dalam Jupyter notebook instance. Unggah notebook `image-classification-fulltraining.ipynb` yang sudah Anda unduh ke notebook tersebut dengan mengklik **Upload** dan memilih file.
+
+![Langkah 2.2.](images/step-17.png)
+
+**LANGKAH 3** Sekarang Anda sudah berada di Jupyter notebook berisi langkah dan algoritma image recognition. Ikuti langkah-langkah yang ada di notebook tersebut. Klik tombol **Run** untuk merunut setiap langkah.
+
+![Langkah 2.3.](images/step-18.png)
 
 ### 3. Melakukan Pembersihan
 
+Setelah Anda berhasil menjalankan algoritma, sekarang saatnya membersihkan semua sumber daya yang tidak dibutuhkan agar tidak menimbulkan biaya yang percuma.
+
 ### 3. a. Menghapus Notebook SageMaker
+
+**LANGKAH 1** Pergi ke halaman Notebook instance di SageMaker console. 
+
+**LANGKAH 2** Pilih instans yg ingin dimatikan, kemudian pilih **Actions** > **Stop**.
+
+![Langkah 3.a.2.](images/step-19.png)
+
+**LANGKAH 3** Setelah instans sudah dalam Status **Stopped**, pilih **Actions** > **Delete**. Lalu konfirmasi penghapusan.
+
+![Langkah 3.a.2.](images/step-20.png)
 
 ### 3. b. Menghapus S3 Bucket
 
-**LANGKAH 1** Pergi ke halaman S3 Console.
+**LANGKAH 1** Di halaman konsol S3, pilih __bucket__ yang ingin dihapus. Lalu pilih **Empty**. __Bucket__ harus kosong sebelum bisa dihapus. Lalu konfirmasi pengosongan __bucket__.
 
-**LANGKAH 2** Lorem Ipsum Dolor Sit Amet
+**LANGKAH 2** Setelah itu pilih **Delete** pada __bucket__ yang ingin dihapus. Dan konfirmasi penghapusan.
